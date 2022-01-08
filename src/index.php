@@ -15,6 +15,7 @@
 
 
 <?php 
+
 $a = "Die blauen Reiter.";
 echo "Ausgabe : ";
 var_dump(str_starts_with($a,"Die"));
@@ -97,9 +98,6 @@ echo" Mit Umwandlung : ".htmlentities($a)."</p>";
 
 echo" Die Funktion htmlspecialchars(String , Anfuehrungszeichen, Zeichensatz) funktiniert genau so wie htmlentities()"."<br/>\n ";
 echo "KONVERTIERT ABER NICHT ALLLE  HTML_ Sonderzeichen. konvertiert werden <>, ' ," ."<br/>\n ";
-
-
-?>
 
 
 ?>
