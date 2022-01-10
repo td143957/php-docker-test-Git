@@ -10,15 +10,17 @@
         <h3>Was passt dir am besten, vor oder nach dem Tanzen ?</h3>
 </div>
       
-<script> alert("wir werden uns die Aufgaben bei tanzen teilen,einer macht Musik der andere macht controlle");</script>
+<script> alert("wir werden uns die Aufgaben bei tanzen teilen,einer macht Musik der andere macht controlle");</script>	    
 
-<?php 
-
+	    <?php 
+## String-Punkt-Verbingung:
+	    
 echo "Anwendung der String-Punkt-Verbingung anhang eines Beispiels "."</p>";
+```shell
  $a=10;
  $b =".Euro";
  echo $a . $b ."</p>";
-
+```
 echo "Reihenfolge der Inkrementiereung ++"."</p>";
 $a = 7;
  $b= 3;
