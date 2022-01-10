@@ -28,3 +28,10 @@ echo "Alternativ zu 7.22: kann man str_starts_with() und str_ends_with() anwende
      var_dump(str_starts_with($a,"Die"));
      var_dump(str_ends_with($a,"."));
      
+
+
+Um HTML und PHP zusammen zu verwenden:
+https://www.smarty.net/docs/en/
+
+Professionelle Entwicklung mit PHP:
+https://www.yiiframework.com/doc/guide/2.0/en/start-hello
