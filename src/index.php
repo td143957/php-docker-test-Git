@@ -15,7 +15,7 @@
 	    <?php 
 ## String-Punkt-Verbingung:
 	    
-echo "Anwendung der String-Punkt-Verbingung anhang eines Beispiels "."</p>";
+`echo` "Anwendung der String-Punkt-Verbingung anhang eines Beispiels "."</p>";
 ```shell
  $a=10;
  $b =".Euro";
