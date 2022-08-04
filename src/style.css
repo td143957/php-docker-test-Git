@@ -1,70 +1,176 @@
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-background: rgb(0, 0, 0);
-color:white;
-}
 
-.message {
-width:500px;
-margin:auto;
-text-align:center;
-}
+.flexcontainer {
+    display: flex;
+    
+    flex-direction:column;/*So sind die Item horizontal ausgerichtet und 
+    mit flex-direction:row ; kann man die Ausrichtung vertikal machen */
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+    }
 
 
-.center {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-background: rgba(218, 56, 77, 0);
-}
-.wave {
-  width: 5px;
-  height: 100px;
-  background: linear-gradient(45deg, rgba(255, 0, 0, 0.842), rgb(255, 255, 255));
-  margin: 10px;
-  animation: wave 1s linear infinite;
-  border-radius: 20px;
-}
-.wave:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.wave:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.wave:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.wave:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.wave:nth-child(6) {
-  animation-delay: 0.5s;
-}
-.wave:nth-child(7) {
-  animation-delay: 0.6s;
-}
-.wave:nth-child(8) {
-  animation-delay: 0.7s;
-}
-.wave:nth-child(9) {
-  animation-delay: 0.8s;
-}
-.wave:nth-child(10) {
-  animation-delay: 0.9s;
+.flexcontainer0 {
+    display: flex;/*So sind die Item horizontal und nur so breit,wie der Inhalt,Also stardmäßig*/
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+    }
+ 
+.flexcontainer1 {display: flex;
+background-color: grey;/*So verhält sich der flex-container wie ein Blok-element und nimmt die gesammte Breite*/
+height: 80px; /*wenn man der flexcontainer vergrößert,werden die Item auch automatisch groß*/
+margin-block-end: 15px;
+
 }
 
-@keyframes wave {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
+.eins{background-color: orange; width:100px; height: 50px;}
+.zwei{background-color: skyblue; width:100px;height: 50px}
+.drei{background-color: lightgrey; width:100px;height: 50px}
+.vier{background-color:blueviolet;/*wenn man ein der Item vergrößert,wird flexcontainer und die anderen Item  automatisch genau so größ.*/
+height: 50px;
+width:100px;
 }
+
+.flexcontainer2 {display: flex;/*Dies flexcontainer vergrößert sich wegen der 80px in vierten Item*/
+    background-color: grey;
+    margin-block-end: 15px;
+
+}
+    .flexcontainer3 {display: flex;/*mit flex verhält sich der Container wie ein Block-Element */
+        background-color: grey;
+        margin-block-end: 15px;
+        
+    }
+
+    .flexcontainer4 {display:inline-flex;/*mit inline-flex verhindert die automatische Block-Eingenschaft der container*/
+        background-color: grey;
+        margin-block-end: 15px;
+        
+    }
+
+    .flexcontainer5 {display: inline-flex;/*mit inline-flex ein zweites Mal hat man keine Zahlenumbruch,so kommt das nächste Element direkt daneben*/
+        background-color: grey;
+        margin-block-end: 15px;
+        
+    }
+
+    /* -Styling des Flex-Containers
+       -Vertikale Ausrichtung
+       -Horizontale Ausrichtung*/
+
+       .flexcontainer01 {display: flex;
+        flex-direction:column-reverse;/*So werden die Item Vertikale von Unten nach Oben eingerichtet*/
+        background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+     
+    .flexcontainer02 {display: flex;
+        flex-direction:row-reverse;/*So werden die Item Horizontale von Recht nach Links eingerichtet*/
+        background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+    
+    .flexcontainer03 {display: flex;
+        flex-direction:row;/*So werden die Item Horizontale von Links nach Recht eingerichtet*/
+        flex-wrap: nowrap;/*So hat man verhindert man den Zeilenumbruch,sondern die Elemente schrunpfen bis es nicht mehr geht*/
+        background-color: grey;
+        margin-block-end: 15px;
+    }
+
+    .flexcontainer04 {display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;/*So kann man einen Zeilenumbruch bei verkleinen der Seite ermöglichen
+        sodass das letzte Element nach unten rutcht*/
+        background-color: grey;
+        margin-block-end: 15px;
+    }
+
+    .flexcontainer05 {display: flex;
+        flex-direction:row;/*So werden die Item Horizontale von Links nach Recht eingerichtet*/
+        flex-wrap: wrap-reverse;/*So kann man einen Zeilenumbruch bei verkleinen der Seite ermöglichen
+        sodass das letzte Element nach Oben rutcht*/
+        background-color: grey;
+        margin-block-end: 15px;
+    }
+
+    .flexcontainer06 {display: flex;
+        flex-flow:column nowrap;/*flex-flow: ermöglischt die Kombination von beide ;
+        colum:ist ein flex-direction und führt hier dazu,dass die Item vertikale ausgerichtet sind;
+        und nowrap führt hier dazu,dass die Item nur schupfen können*/
+        background-color: grey;
+        margin-block-end: 15px;
+    }
+
+    .flexcontainer07 {display: flex;
+        justify-content: center;/* kann man es in der Mitte anordnen
+        justify-content: flex-end; kann man es rechtbündige anordnen
+        justify-content: flex-start; kann man es linksbündig machen
+        */
+
+
+           background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+    
+    .flexcontainer08 {display: flex;
+        justify-content: center;/* 
+        justify-content:space-between; kann man die Item mit gleichem Abstand in die gesamte Fläsche verteilen*/
+        justify-content:space-between;
+
+           background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+    .flexcontainer09 {display: flex;
+        justify-content: center;
+        /*justify-content:space-between; kann man die Item mit gleichem Abstand in die gesamte Fläsche verteilen
+        und jeden Item jeweils centrieren*/
+        justify-content:space-around;
+
+           background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+    .flexcontainer10 {display: flex;
+        height: 200px;
+        align-items: center;/*so werden die Item in der Mitte Links gerichtet
+        align-items: flex-start; so werden die Item am oberen Rand gerichtet
+        align-items: flex-end; Item iam unteren Rand Links
+        */
+
+        background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+
+    .flexcontainer11 {display: flex;
+        height: 200px;
+        align-items: center;
+        justify-content:center;/*so werden alle Item in der Mitte gerichtet*/
+
+        background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+    .flexcontainer12 {display: flex;
+
+        flex-direction:column;/* Um die Item vertikal auszurichten */
+        height: 400px;
+        justify-content: flex-end;/*so werden alle Item nach unten gerichtet*/
+        align-items: center;/* So werden die Item in der Mitte gerichtet */
+
+
+        background-color: grey;
+        margin-block-end: 15px;   
+    }
+
+
+
+
+
+
+
+
